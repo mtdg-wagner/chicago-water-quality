@@ -9,7 +9,7 @@ icons <- awesomeIcons(
   markerColor = "red"
 )
 
-m %>% addTiles() %>% 
+m %>% addProviderTiles(providers$CartoDB.Positron) %>% 
   addAwesomeMarkers(-87.6061, 41.8948, popup = "Water for the masses!",
              label = "Jardine Water Purification Plant", icon = icons) %>%
   addAwesomeMarkers(-87.5425, 41.7583, popup = "Was that a solid?",
